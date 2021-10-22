@@ -60,6 +60,7 @@ public class MemberDAO {
 				ps.setString(2, dto.getPwd());
 				ps.setString(3, dto.getName());
 				ps.setString(4, dto.getAddr());
+				result = ps.executeUpdate();
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

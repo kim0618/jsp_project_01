@@ -41,13 +41,13 @@
 		<c:when test="${result == 1 }">
 			<script type="text/javascript">
 				alert('회원가입 성공');
-				locationg.href='${contextPath}/member/membership.jsp'
+				location.href='${contextPath}/member/membership.jsp'
 			</script>
 		</c:when>
 		<c:otherwise>
 			<script type="text/javascript">
 				alert('회원가입 실패 문제가 발생했습니다.');
-				locationg.href='${contextPath}/member/member_register.jsp'
+				location.href='${contextPath}/member/member_register.jsp'
 				</script>
 		</c:otherwise>
 	</c:choose>
