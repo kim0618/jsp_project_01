@@ -9,7 +9,7 @@
 </head>
 <body>
 
-	<c:remove var="se"  />
+	<c:remove var="se" scope="session" />
 	<script type="text/javascript">
 		alert('로그아웃 되었습니다.')
 		location.href="login.jsp"

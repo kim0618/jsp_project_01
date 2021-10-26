@@ -37,7 +37,7 @@ nav ul li a:hover {
 			alert('로그인 후 이용하세요')
 			location.href="${contextPath }/member/login.jsp"
 		}else{
-			location.href="${contextPath }/member/board.jsp"
+			location.href="${contextPath }/board/board.jsp"
 		}
 	}
 </script>

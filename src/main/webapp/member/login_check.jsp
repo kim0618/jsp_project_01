@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
      <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
      <c:set var="contextPath" value="${pageContext.request.contextPath }"/>
+     <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +10,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<fmt:requestEncoding value="utf-8" />
 	<jsp:useBean id="dto" class="com.care.root.member.dto.MemberDTO"/>
 	<jsp:useBean id="dao" class="com.care.root.member.dao.MemberDAO"/>
 	<c:set var="mem" value="${dao.getMember(param.id) }" />
